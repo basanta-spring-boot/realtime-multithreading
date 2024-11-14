@@ -1,5 +1,15 @@
 # realtime-multithreading
 
+### Setup Kafka
+
+1. Start Zookeeper Server
+
+    ```sh bin/zookeeper-server-start.sh config/zookeeper.properties```
+
+2. Start Kafka Server / Broker
+
+    ```sh bin/kafka-server-start.sh config/server.properties```
+
 ### Reset the database (Quick Testing)
 ```
 curl --location --request POST 'http://localhost:9191/api/products/reset' \
